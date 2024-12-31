@@ -1,0 +1,128 @@
+@import url("./fonts/stylesheets.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Устанавливает модель расчета 
+    размеров элемента так, что ширина и высота включают 
+    внутренние отступы (padding) и границы (border). 
+    Это упрощает управление размерами элементов и 
+    предотвращает неожиданные изменения размеров 
+    при добавлении отступов и границ. */
+  }
+
+/* Необходимые классы */
+
+.darkBg{
+  background-color: #2B2B2B;
+}
+
+.WorkSans{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.WorkSansB700{
+  font-family: 'Work Sans B700', sans-serif;
+}
+
+.dFlex{
+  display: flex; /* Превращает .home в flex-контейнер */
+}
+
+.aICenter{
+  align-items: center; /* Выравнивает дочерние элементы 
+  по центру по вертикали */
+}
+
+.jCSpaceBetween{
+  justify-content: space-between; /* Распределяет дочерние 
+  элементы равномерно по главной оси */
+}
+
+.jCRight{
+  justify-content: flex-end; /* Распределяет дочерние элементы 
+  в конец главной оси */
+}
+
+.whiteText{
+  color: white;
+}
+
+.lSNone{
+  list-style: none; /* Убирает маркеры у списка */
+}
+
+.tDNone{
+  text-decoration: none; /* Убирает подчеркивание текста */
+}
+
+.bRadius{
+  border-radius: 20px; /* Закругляет углы элемента */
+}
+
+/* Кастомные классы (которые могут повторяться)*/
+
+.BtnBg{
+  background-color: #A259FF;
+  border: none;
+}
+
+/* Классы с отдельными размерами и отступами */
+
+nav{
+  width: 100%;
+  height: 100px;
+  position: fixed; /* Фиксирует навбар */
+  top: 0; /* Располагает навбар в верхней части страницы */
+  left: 0; /* Располагает навбар по левому краю страницы */
+  z-index: 1000; /* Устанавливает высокий z-index, чтобы навбар был поверх других элементов */
+  background-color: rgba(43, 43, 43, 1); /* Устанавливает начальный непрозрачный фон для навбара */
+  transition: background-color 0.3s; /* Добавляет плавный переход для изменения фона */
+}
+
+
+.home{
+  margin-left: 55px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 243.41px;
+  height: 32px;
+}
+
+.homeLogo{
+  width: 32px;
+  height: 32px;
+}
+
+.logoOfSiteName{
+  width: 199.41px;
+  height: 19.8px;
+  margin-top: 4.59px;
+}
+
+.menuInNav{
+  margin-right: 50px;
+  margin-top: 21px;
+  margin-bottom: 32px;
+  width: 607px;
+  height: 60px;
+  display: flex;
+  padding: 0; /* Убирает отступы */
+}
+
+.btnOfSignUp{
+  gap: 10px;
+  padding: 10px 20px;
+  width: 152px;
+  height: 60px;
+  
+}
+
+.signUpText{
+  font-size: 20px;
+  margin: 0;
+  color: white; /* Цвет текста */
+}
+
+
+
