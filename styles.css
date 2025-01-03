@@ -19,10 +19,12 @@
 
 .WorkSans{
   font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
 }
 
-.WorkSansB700{
-  font-family: 'Work Sans B700', sans-serif;
+.SpaceMono{
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
 }
 
 .dFlex{
@@ -32,6 +34,10 @@
 .aICenter{
   align-items: center; /* Выравнивает дочерние элементы 
   по центру по вертикали */
+}
+
+.jCCenter{
+  justify-content: center; /* Центрирует дочерние элементы по главной оси */
 }
 
 .jCSpaceBetween{
@@ -89,15 +95,26 @@ nav{
   height: 32px;
 }
 
+.home:hover .homeLogo path {
+  fill: white;
+  transition: fill 0.999s ease;
+}
+
+.home:hover .NFTMarketplace{
+  color: #A259FF;
+  transition: color 0.999s ease;
+}
+
 .homeLogo{
   width: 32px;
   height: 32px;
 }
 
-.logoOfSiteName{
+.NFTMarketplace{
   width: 199.41px;
   height: 19.8px;
-  margin-top: 4.59px;
+  margin-left: 12px;
+  margin-bottom: 3.6px;
 }
 
 .menuInNav{
@@ -110,19 +127,278 @@ nav{
   padding: 0; /* Убирает отступы */
 }
 
+.marketPlace{
+  width: 139px;
+  height: 46px;
+}
+
+.marketPlaceText{
+  width: 99px;
+  height: 22px;
+  size: 16px;
+  line-height: 22.4px;
+  padding: 20px 20px;
+}
+
+.marketPlace:hover .marketPlaceText{
+  color: #A259FF;
+  transition: color 0.999s ease;
+}
+
+.rankings{
+  width: 112px;
+  height: 46px;
+}
+
+.rankingsText{
+  width: 72px;
+  height: 22px;
+  size: 16px;
+  line-height: 22.4px;
+  padding: 24px 20px;
+}
+
+.rankings:hover .rankingsText{
+  color: #A259FF;
+  transition: color 0.999s ease;
+}
+
+.connectAWallet{
+  width: 174px;
+  height: 46px;
+}
+
+.connectAWalletText{
+  width: 134px;
+  height: 22px;
+  size: 16px;
+  line-height: 22.4px;
+  padding: 24px 20px;
+  white-space: nowrap; /* Запрещает перенос текста на новую строку */
+}
+
+.connectAWallet:hover .connectAWalletText{
+  color: #A259FF;
+  transition: color 0.999s ease;
+}
+
 .btnOfSignUp{
   gap: 10px;
   padding: 10px 20px;
   width: 152px;
   height: 60px;
-  
+}
+
+.btnOfSignUp:hover .signUpText{
+  color: #A259FF;
+  transition: color 0.999s ease;
+}
+
+.btnOfSignUp:hover .signUpLogo path{
+  fill: #A259FF;
+  transition: fill 0.999s ease;
+}
+
+.btnOfSignUp:hover{
+  background-color: #2B2B2B;
+  border: 3px solid #A259FF;
+  transition: background-color 0.999s ease;
+}
+
+.signUpLogo{
+  width: 20px;
+  height: 20px;
 }
 
 .signUpText{
-  font-size: 20px;
-  margin: 0;
-  color: white; /* Цвет текста */
+  font-size: 16px;
+  width: 60px;
+  height: 22px;
+  line-height: 22.4px;
 }
 
+.clickableForm{
+  cursor: pointer; /* Изменяет указатель мыши на клик */
+  color: inherit; /* Наследует цвет текста */
+}
 
+/* Основные стили для бургер-меню */
+.burger-menu {
+  display: none; /* Скрывает бургер-меню по умолчанию */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 50px; /* Отступ справа */
+  margin-top: 12px; /* Отступ сверху */
+  margin-bottom: 12px; /* Отступ снизу */
+}
 
+.burger-menu svg {
+  fill: white; /* Начальный цвет иконки */
+  transition: fill 0.333s ease; /* Плавный переход для изменения цвета */
+}
+
+.burger-menu:hover svg path {
+  fill: #A259FF; /* Меняет цвет иконки на фиолетовый при наведении */
+  transition: fill 0.333s ease;
+}
+
+/* Планшеты (ширина 974px и высота 54px) */
+@media (max-width: 974px) {
+  nav {
+    height: 54px; /* Высота для планшетов */
+    display: flex;
+    align-items: center;
+  }
+
+  .home {
+    margin-left: 50px;
+    width: 182.56px;
+    height: 24px;
+  }
+
+  .homeLogo {
+    width: 24px;
+    height: 24px;
+    size: 24px;
+  }
+
+  .NFTMarketplace{
+    width: 149.56px;
+    height: 14.85px;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 14px; /* Устанавливает размер шрифта */
+    margin-top: 6.4px;
+    margin-bottom: 3px;
+  }
+
+  .menuInNav {
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: flex-start;
+    display: none; /* Скрывает меню по умолчанию */
+  }
+
+  .menuInNav.active {
+    display: flex; /* Показывает меню при активном бургер-меню */
+  }
+
+  .menuInNav {
+    display: none; /* Скрывает меню по умолчанию */
+  }
+
+  .menuInNav.active {
+    display: flex; /* Показывает меню при активном бургер-меню */
+  }
+
+  .menuInNav li {
+    margin-bottom: 10px; /* Отступ между элементами списка */
+  }
+
+  .btnOfSignUp {
+    width: 100%; /* Кнопка занимает всю ширину */
+    justify-content: center;
+  }
+
+  .burger-menu {
+    display: flex; /* Показывает бургер-меню на планшетах */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 50px; /* Отступ справа */
+    margin-top: 12px; /* Отступ сверху */
+    margin-bottom: 12px; /* Отступ снизу */
+  }
+
+  .burger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: background-color 0.999s ease; /* Плавный переход для изменения цвета фона */
+  }
+  
+  .burger-menu-svg {
+    fill: white; /* Начальный цвет иконки */
+    transition: fill 0.999s ease; /* Плавный переход для изменения цвета */
+  }
+  
+  .burger-menu-svg:hover {
+    fill: #A259FF; /* Меняет цвет иконки на фиолетовый при наведении */
+    transition: fill 0.999s ease; /* Плавный переход для изменения цвета */
+  }
+}
+
+/* Мобильные устройства (ширина 375px и высота 54px) */
+@media (max-width: 375px) {
+  nav {
+    height: 54px; /* Высота для мобильных устройств */
+    padding: 10px 0px;
+  }
+
+  .home {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 182.56px;
+    height: 24px;
+  }
+
+  .homeLogo{
+    width: 24px;
+    height: 24px;
+    size: 24px;
+  }
+
+  .NFTMarketplace{
+    width: 149.56px;
+    height: 14.85px;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 12px; /* Устанавливает размер шрифта */
+    margin-top: 6.4px;
+    margin-bottom: 3px;
+  }
+
+  .menuInNav {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: flex-start;
+    display: none; /* Скрывает меню по умолчанию */
+  }
+
+  .menuInNav.active {
+    display: flex; /* Показывает меню при активном бургер-меню */
+  }
+
+  .menuInNav li {
+    margin-bottom: 5px; /* Отступ между элементами списка */
+  }
+
+  .btnOfSignUp {
+    width: 100%; /* Кнопка занимает всю ширину */
+    justify-content: center;
+  }
+
+  .burger-menu {
+    display: flex; /* Показывает бургер-меню */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: fill 0.999s ease;
+    margin-right: 30px;
+  }
+}
