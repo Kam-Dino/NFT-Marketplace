@@ -1,4 +1,5 @@
 @import url("./fonts/stylesheets.css");
+@import url(./burger-menu.css);
 
 * {
     margin: 0;
@@ -17,9 +18,18 @@
   background-color: #2B2B2B;
 }
 
+.silverBlackBg{
+  background-color: #3B3B3B;
+}
+
 .WorkSans{
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
+}
+
+.WorkSansFW400{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
 }
 
 .SpaceMono{
@@ -66,6 +76,30 @@
   border-radius: 20px; /* Закругляет углы элемента */
 }
 
+.gap30{
+  gap: 30px; /* Устанавливает промежуток между элементами */
+}
+
+.gap20{
+  gap: 20px; /* Устанавливает промежуток между элементами */
+}
+
+.gap15{
+  gap: 15px; /* Устанавливает промежуток между элементами */
+}
+
+.gap12{
+  gap: 12px; /* Устанавливает промежуток между элементами */
+}
+
+.mb20{
+  margin-bottom: 20px; /* Устанавливает отступ снизу */
+}
+
+.mb30{
+  margin-bottom: 30px; /* Устанавливает отступ снизу */
+}
+
 /* Кастомные классы (которые могут повторяться)*/
 
 .BtnBg{
@@ -73,7 +107,19 @@
   border: none;
 }
 
+.purpleBB{
+  border-bottom: 1.5px solid #A259FF;
+}
+
 /* Классы с отдельными размерами и отступами */
+
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 nav{
   width: 100%;
@@ -85,7 +131,6 @@ nav{
   background-color: rgba(43, 43, 43, 1); /* Устанавливает начальный непрозрачный фон для навбара */
   transition: background-color 0.3s; /* Добавляет плавный переход для изменения фона */
 }
-
 
 .home{
   margin-left: 55px;
@@ -245,8 +290,124 @@ nav{
   transition: fill 0.333s ease;
 }
 
+main .main{
+  width: 1280px;
+  height: 704px;
+}
+
+.HeroSection{
+  width: 1280px;
+  height: 704px;
+}
+
+.HeroDivMain{
+  width: 1050px;
+  height: 544px;
+  margin: 80px 115px;
+}
+
+.headlineAboutNFT{
+  width: 512px;
+  height: 222px;
+  font-size: 67px;
+  line-height: 73.7px;
+}
+
+.cardOfHero{
+  width: 510px;
+  height: 510px;
+}
+
+.imagePlaceholder{
+  width: 510px;
+  height: 401px;
+}
+
+.descriptionAboutNFT{
+  width: 510px;
+  height: 105px;
+  font-size: 22px;
+  line-height: 35.2px;
+}
+
+.btnOfGetStarted{
+  width: 224px;
+  height: 60px;
+}
+
+.rocketLaunchIcon{
+  width: 20px;
+  height: 20px;
+}
+
+.GetStartedText{
+  width: 92px;
+  height: 22px;
+  size: 16px;
+  line-height: 22.4px;
+}
+
+.estimatesText{
+  width: 150px;
+  height: 38px;
+  size: 23.99px;
+  line-height: 38.38px;
+}
+
+.imagePlaceholder{
+  width: 510px;
+  height: 401px;
+  margin-bottom: 22px;
+}
+.nameOfImage{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 470px;
+  height: 31px;
+  font-size: 22px;
+  line-height: 30.8px;
+}
+
+.Author{
+  margin-left: 20px;
+  width: 470px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.authorText{
+  width: 434px;
+  height: 22px;
+  size: 16px;
+  line-height: 22.4px;
+  margin-bottom: 22px;
+}
+
+.btnOfGetStarted:hover .getStartedText{
+  color: #A259FF;
+  transition: color 0.999s ease;
+}
+
+.btnOfGetStarted:hover .rocketLaunchIcon path{
+  fill: #A259FF;
+  transition: fill 0.999s ease;
+}
+
+.btnOfGetStarted:hover{
+  background-color: #2B2B2B;
+  border: 3px solid #A259FF;
+  transition: background-color 0.999s ease;
+}
+
 /* Планшеты (ширина 974px и высота 54px) */
 @media (max-width: 974px) {
+  header{
+    height: 54px; /* Высота для планшетов */
+    display: flex;
+    align-items: center;
+  }
+
   nav {
     height: 54px; /* Высота для планшетов */
     display: flex;
